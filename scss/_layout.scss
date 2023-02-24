@@ -1,0 +1,22 @@
+#cardPadre{
+    display: grid;
+    grid-template-areas:
+    "cards card card card card"
+    "banner banner banner banner"
+    "footer footer footer footer";
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    row-gap: 5rem;
+}
+
+#card{
+    grid-area: card;
+}
+
+#banner{
+    grid-area: banner;
+}
+
+#footer{
+    grid-area: footer;
+}
