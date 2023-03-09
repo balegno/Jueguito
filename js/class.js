@@ -72,6 +72,6 @@ let pokeCard = []
 if(localStorage.getItem("pokeCard")){
     pokeCard = JSON.parse(localStorage.getItem("pokeCard"))
 }else{
-    pokeCard.push(pokemons1,pokemons2,pokemons3,pokemons3,pokemons5,pokemons6,pokemons7,pokemons8,pokemons9,pokemons10,pokemons11,pokemons12,pokemons13,pokemons14,pokemons15,pokemons16,pokemons17,pokemons18,pokemons19,pokemons20,pokemons21,pokemons22,pokemons23,pokemons24,pokemons25,pokemons26,pokemons27,pokemons28,pokemons29,pokemons30,)
+    pokeCard.push(pokemons1,pokemons2,pokemons3,pokemons4,pokemons5,pokemons6,pokemons7,pokemons8,pokemons9,pokemons10,pokemons11,pokemons12,pokemons13,pokemons14,pokemons15,pokemons16,pokemons17,pokemons18,pokemons19,pokemons20,pokemons21,pokemons22,pokemons23,pokemons24,pokemons25,pokemons26,pokemons27,pokemons28,pokemons29,pokemons30,)
     localStorage.setItem(pokeCard, JSON.stringify(pokeCard))
 }

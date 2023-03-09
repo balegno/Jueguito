@@ -11,9 +11,9 @@ header {
 
 h1 {
   font-size: 3rem;
-  text-transform: uppercase;
   margin-top: 2rem;
   font-family: "Cinzel", serif;
+  text-align: center;
 }
 
 h2 {
@@ -28,8 +28,8 @@ h4 {
 }
 
 p {
-  margin-top: 1.4rem;
-  margin-bottom: 4rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   text-align: center;
@@ -64,29 +64,15 @@ a:hover {
   margin: 2rem;
   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   height: 13rem;
-  width: 9rem;
+  width: 11rem;
   border: solid 3px black;
   border-radius: 1.5rem;
   font-size: 3rem;
 }
-
-#card {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
-  justify-items: center;
+#card img {
+  justify-content: center;
 }
 
-@media screen and (max-width: 1055px) {
-  #card {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-@media screen and (max-width: 480px) {
-  #card {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 :root {
   --color-fuente: #ffffff;
   --color-fondo: #000;
@@ -155,26 +141,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-#cardPadre {
-  display: grid;
-  grid-template-areas: "cards card card card card" "banner banner banner banner" "footer footer footer footer";
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  row-gap: 5rem;
-}
-
-#card {
-  grid-area: card;
-}
-
-#banner {
-  grid-area: banner;
-}
-
-#footer {
-  grid-area: footer;
 }
 
 /*# sourceMappingURL=styles.css.map */
